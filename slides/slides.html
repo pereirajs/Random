@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Your deck.js Presentation</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide" id="extensions-scale">
+      <h1>Introducción a JS: historia y aplicaciones</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Historia</h2>
+      <!-- <p class="slide"> Javascript no es Java.</p> -->
+      <p class="slide"> Fue creado en mayo de 1995 por Brendan Eich.</p>
+      <p class="slide"> Ha tenido varios nombres como Mocha, LiveScript, pero finalmente debido a una estratégia de marketing adoptó el nombre de JavaScript</p>
+    </section>
+    <section class="slide">
+      <h2>ECMAScript</h2>
+      <p class="slide"> ECMA es una empresa sin ánimo de lucro encargada de la estandarización <p>
+      <p class="slide"> En 1997 JavaScript adopta el estándar ECMAScript para garantizar compatibilidad con los navegadores </p>
+      <p class="slide"> Actualmente JavaScript es la implementación más conocida del estándar ECMAScript </p>
+    </section>
+
+    <section class="slide">
+      <h2>ECMAScript</h2>
+      <p class="slide"> Durante la historia Microsoft e IE, no han querido aceptar el estándar, por el contrario organizaciones como Mozilla o Google han tratado de
+                        conservar dicho estándar
+      </p>
+      <p class="slide"> En su tercera edición se nota una acogida masiva, permitiendo a JavaScript estar en prácticamente todos los navegadores actuales.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Motores basados en el estándar ECMAScript</h2>
+      <ol>
+        <li>Spidermonkey : mozilla.org</li>
+        <li>Rhino : mozilla.org </li>
+        <li>V8 : google </li>
+        <li>JavaScriptCore : Apple Safari</li>
+        <li>Carakan : Opera </li>
+      </ol>
+      Internet Explorer usa un motor de JScript, el cual NO es JavaScript
+    </section>
+
+
+
+    <section class="slide">
+      <h2>¿ Qué es Javascript ?</h2>
+
+      <p class="silde"> JavaScript NO es Java </p>
+      <p class="silde">
+        Javascript es un lenguaje interpretado orientado a objetos, desarrollado originalmente por Netscape (Brendan Eich).
+      </p>
+      <p class="silde"> A fin de minimizar la cantidad de conceptos para aprender JavaScript, su sintaxis es muy similar a la de C++ .</p>
+
+
+    </section>
+
+    <section class="slide">
+      <h2>¿ Qué es Javascript ?</h2>
+      <p class="slide"> Javascript no es basado en clases como Java o C++, es basado en prototipos, es decir, no existen distinción entre clases e instancias.
+        Simplemente se definen ciertas "plantillas", las cuales se pueden ir modificando en el tiempo. Todo objeto se puede adicionar como el "prototipo" de otro,
+        permitiendo de esta manera al segundo objeto compartir las propiedades del primer objeto
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>¿ Qué es Javascript ?</h2>
+      <p class="slide"> JavaScript es un lenguaje de programación tanto imperativo como funcional </p>
+      <p class="slide"> Importante : Es asíncrono </p>
+    </section>
+
+    <section class="slide">
+      <h2>Ejemplo</h2>
+
+      <p class="slide"> Ejemplo de código asíncrono y uso de callback </p>
+      <pre>
+          window.setTimeout(function() {
+            console.log("World");
+          }, 1000);
+          console.log("Hello");
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Aplicaciones</h2>
+      <ul>
+        <li>
+          <h3> Web browsers (Uso en páginas web)</h3>
+          <ul>
+            <li>
+            <p class="slide"> client-side: </p>
+            <p class="slide"> (Tradicionalmente) Interacción con el usuario, manipulación del DOM, etc. </p>
+            <p class="slide"> AJAX </p>
+            <p class="slide"> Animaciones </p>
+            <p class="slide"> Contenido interactivo (juegos,video,audio) </p>
+            <p class="slide"> Validación formularios </p>
+            <p class="slide"> ** javaScript al poder ejecutarse en el navegador del usuario, puede responder con mayor rapidez, puede detectar EVENTOS
+                    que HTML por sí solo no puede </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Aplicaciones</h2>
+      <ul>
+        <li>
+          <h3> Web browsers </h3>
+          <ul>
+            <li>
+            <p class="slide"> server-side: </p>
+            <p class="slide"> Netscape introdujo server-side scripting (SSJS) - 1994 </p>
+            <p class="slide"> A partir del año 2000 hay una proliferación de implementaciones de javaScript del lado del servidor </p>
+            <p class="slide"> NodeJS es un notable ejemplo de javaScript del lado del servidor </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Aplicaciones</h2>
+      <ul>
+        <li>
+          <ul>
+            <li>
+            <p class="slide"> Extensiones y Apple's </p>
+            <p class="slide"> <img style="width: 150px;" src="images/Google_Chrome_icon_(2011).svg" alt="chrome"> </p>
+            <p class="slide"> <img style="width: 150px;" src="images/Opera_browser_logo_2013.png" alt="opera"> </p>
+            <p class="slide"> <img style="width: 150px;" src="images/Apple_Safari.png" alt="safari"> </p>
+
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Aplicaciones</h2>
+      <ul>
+        <li>
+          <ul>
+            <li>
+            <p class="slide"> javaScript en archivos PDF </p>
+            <p class="slide"> <img style="width: 150px;" src="images/Adobe_Acrobat_XI.png" alt="Adobe"> </p>
+            <p class="slide"> Herramientas en Adobe Creative Suite, incluyendo Photoshop, Illustrator, Dreamweaver, and InDesign, permiten scripting a través JavaScript.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Aplicaciones</h2>
+      <ul>
+        <li>
+          <ul>
+            <li>
+            <p class="slide"> Secuencias de comandos personalizadas (macros) </p>
+            <p class="slide"> <img src="images/LibreOffice_logo.svg" alt="libreoffice"> </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Aplicaciones</h2>
+      <ul>
+        <li>
+          <ul>
+            <li>
+            <p class="slide"> GNOME Shell </p>
+            <p class="slide"> "Much of the code of the shell is written in Javascript" </p>
+            <p class="slide"> <img src="images/gnome-logo.png" alt="libreoffice"> </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Aplicaciones</h2>
+      <ul>
+        <li>
+          <ul>
+            <li>
+            <p class="slide"> Herramientas de desarrollo (Debuggers) </p>
+            <p class="slide"> Script debuggers se encuentra disponibles en Internet Explorer, Firefox, Safari, Google Chrome, and Opera. </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Hardware y Javascript?</h2>
+      <p class="slide"> ar-drone An implementation of the networking protocols used by the Parrot AR Drone 2.0 and 1.0 </p>
+      <p class="slide"> <img src="images/ardrone2_hd_elite_edition_jungle_indoor_front.jpg" alt="libreoffice"> </p>
+    </section>
+
+    <section class="slide">
+      <h2>Hardware y Javascript?</h2>
+      <p class="slide"> <img src="images/ardrone2_hd_elite_edition_snow_outdoor_front.jpg" alt="libreoffice"> </p>0
+    </section>
+
+    <section class="slide">
+      <h2>Hardware y Javascript?</h2>
+      <p class="slide"> Johnny-Five is an Open Source, JavaScript Arduino programming framework </p>
+      <p class="slide"> <img src="images/h_01.jpg" alt="libreoffice"> </p>
+    </section>
+
+    <section class="slide">
+      <h2>Hardware y Javascript?</h2>
+      <p class="slide"> Pijs.io is a cloud-platform to write embedded applications for your Raspberry Pi, in JavaScript </p>
+      <p class="slide"> <img src="images/raspberry.jpg" alt="libreoffice"> </p>
+    </section>
+
+
+    <section class="slide">
+      <h2>Aplicaciones</h2>
+      <ul>
+        <li>
+          <ul>
+            <li>
+            <p class="slide"> <a href="http://en.wikipedia.org/wiki/JavaScript#Uses_outside_web_pages"> http://en.wikipedia.org/wiki/JavaScript#Uses_outside_web_pages </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>Gracias.</h1>
+    </section>
+
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>

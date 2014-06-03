@@ -1,0 +1,18 @@
+{
+  "name": "slides",
+  "version": "0.0.0",
+  "description": "Slides para la presentación: Introducción a Javascript, historia y aplicaciones",
+  "main": "jquery.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "http-server": "~0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/http-server"
+  },
+  "author": "Manuel Pineda - Jhon Jimenez",
+  "license": "BSD-2-Clause"
+}
