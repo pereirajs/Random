@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Your deck.js Presentation</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide" id="extensions-scale">
+      <h1>Introducción a Javascript Client-side</h1>
+    </section>
+
+    <section class="slide">
+      <h2>HTML Y XHTML</h2>
+      <p class="slide"> HTML (HyperText Markup Language): Es un estándar que sirve de referencia para la elaboración de páginas web.</p>
+      <p class="slide"> XHTML (eXtensible HyperText Markup Language): XHTML es básicamente HTML expresado como XML válido </p>
+    </section>
+    <section class="slide">
+      <h2>Lenguaje de etiquetas HTML</h2>
+      <p class="slide"> <pre>
+&lt;!DOCTYPE HTML&gt;
+ &lt;html&gt;
+   &lt;head&gt;
+     &lt;title&gt;Pereirajs&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+    &lt;h2&gt; Pereirajs &lt;/h2&gt;
+     &lt;p&gt; Ejemplo html &lt;/p&gt;
+   &lt;/body&gt;
+ &lt;/html&gt;
+   </pre> <p>
+     </section>
+
+    <section class="slide">
+      <h2> ¿HTML y Javascript? </h2>
+      <p class="slide"> ¿Cómo incluir javascript dentro de un documento html? </p>
+      <p class="slide"> <pre>
+&lt;!DOCTYPE HTML&gt;
+ &lt;html&gt;
+   &lt;head&gt;
+     &lt;title&gt;Pereirajs&lt;/title&gt;
+
+     &lt;script type=&quot;text/javascript&quot;&gt;
+        alert(&quot;Javascript dentro de el documento&quot;);
+     &lt;/script&gt;
+
+   &lt;/head&gt;
+   &lt;body&gt;
+    &lt;h2&gt; Pereirajs &lt;/h2&gt;
+     &lt;p&gt; Ejemplo c&oacute;mo incluir javascript en un documento html &lt;/p&gt;
+   &lt;/body&gt;
+ &lt;/html&gt; </pre>
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>¿HTML y Javascript? </h2>
+      <p class="slide"> ¿Cómo incluir javascript dentro de un documento html? </p>
+      <p class="slide"> <pre>
+&lt;!DOCTYPE HTML&gt;
+  &lt;html&gt;
+   &lt;head&gt;
+     &lt;title&gt;Pereirajs&lt;/title&gt;
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;codigo.js&quot;&gt;&lt;/script&gt;
+
+   &lt;/head&gt;
+   &lt;body&gt;
+    &lt;h2&gt; Pereirajs &lt;/h2&gt;
+     &lt;p&gt; Ejemplo c&oacute;mo incluir javascript en un documento html &lt;/p&gt;
+   &lt;/body&gt;
+ &lt;/html&gt;
+      </pre>
+
+      <pre>
+      alert("Javascript desde otro archivo");
+      </pre>
+      </p>
+
+    </section>
+
+
+
+    <section class="slide">
+      <h2>¿HTML y Javascript? </h2>
+     <p class="slide">  <pre>
+&lt;!DOCTYPE HTML&gt;
+ &lt;html&gt;
+   &lt;head&gt;
+     &lt;title&gt;Pereirajs&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+    &lt;h2&gt; Pereirajs &lt;/h2&gt;
+     &lt;p&gt; Ejemplo c&oacute;mo incluir javascript en un documento html &lt;/p&gt;
+     &lt;button onClick = &quot;alert('Saludos!! :P')&quot; &gt; Saludar &lt;/button&gt;
+   &lt;/body&gt;
+ &lt;/html&gt;
+ </pre>
+ </p>
+    </section>
+
+    <section class="slide">
+      <h2> DOM </h2>
+      <p class="slide"> Dom (Document Object Model): Permite la manipulación de documentos XHTML como si fuera documentos XML  </p>
+    </section>
+
+    <section class="slide">
+      <h2>DOM: Árbol de nodos</h2>
+
+      <p class="slide"> DOM transforma un documento XHTML en un conjunto de elementos llamados nodos, que están interconectados
+      y que representan los contenidos de las páginas web y las relaciones entre ellos</p>
+      </section>
+
+    <section class="slide">
+      <pre style="font-size: small;">
+      <code>
+&lt;!DOCTYPE html &quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt;
+&lt;title&gt;P&aacute;gina sencilla&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;Esta p&aacute;gina es &lt;strong&gt;muy sencilla&lt;/strong&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;"
+</code>
+      </pre>
+      <p class="slide"> <img style="font-size: medium;" src="images/sli.gif" alt="sli"> </p>
+      </section>
+
+    <section class="slide">
+      <h2> Manipulación del DOM </h2>
+      <p class="slide"> Acceso directo a los nodos: getElementsByTagName(), getElementsByName(), getElementById() </p>
+
+      <p class="slide"> Creación y eliminación de nodos: document.createElement("ELEMENT"), ELEMENT.appendChild(ELEMENT),removeChild() </p>
+      <p class="slide"> Acceso directo a atributos </p>
+
+    </section>
+
+
+    <section class="slide">
+      <h2>Referencia: </h2>
+      <p><a href="http://librosweb.es/javascript/"> http://librosweb.es/javascript/ </a></p>
+    </section>
+
+    <section class="slide">
+      <h1>Gracias.</h1>
+    </section>
+
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
