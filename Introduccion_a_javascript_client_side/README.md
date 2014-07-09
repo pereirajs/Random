@@ -1,7 +1,7 @@
-# Slides
+# Introduccion a javascript client side
 ## How to run
 ```
-$ cd slides && npm install
+$ cd Introduccion_a_javascript_client_side && npm install
 ```
 ```
 $ npm start

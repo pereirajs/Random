@@ -1,7 +1,8 @@
-# Slides
+# Javascript historia y aplicaciones
 ## How to run
 ```
-$ cd slides && npm install
+$ cd Javascript_historia_y_aplicaciones
+ && npm install
 ```
 ```
 $ npm start
